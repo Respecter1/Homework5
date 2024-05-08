@@ -1,4 +1,4 @@
-//3. Баги: що неправильно у цій функції ?
+//3. Р‘Р°РіРё: С‰Рѕ РЅРµРїСЂР°РІРёР»СЊРЅРѕ Сѓ С†С–Р№ С„СѓРЅРєС†С–С— ?
 
 #include <iostream>
 using namespace std;
@@ -7,11 +7,10 @@ unsigned short int myFunc(unsigned short int x);
 int main()
 {
     unsigned short int x=5, y;
-    y = myFunc(x);//підставляти тип данних неможна y = myFunc(int);
+    y = myFunc(x);//РїС–РґСЃС‚Р°РІР»СЏС‚Рё С‚РёРї РґР°РЅРЅРёС… РЅРµРјРѕР¶РЅР° y = myFunc(int);
     cout << "x: " << x << "y: " << y << "\n";
 }
-unsigned short int myFunc(unsigned short int x)//виправив тип данних функції для коректної роботи подставивши "unsigned short int"
+unsigned short int myFunc(unsigned short int x)//РІРёРїСЂР°РІРёРІ С‚РёРї РґР°РЅРЅРёС… С„СѓРЅРєС†С–С— РґР»СЏ РєРѕСЂРµРєС‚РЅРѕС— СЂРѕР±РѕС‚Рё РїРѕРґСЃС‚Р°РІРёРІС€Рё "unsigned short int"
 {
-    return (4 * x);//Void не повертає нічого 
+    return (4 * x);//Void РЅРµ РїРѕРІРµСЂС‚Р°С” РЅС–С‡РѕРіРѕ 
 }
-
